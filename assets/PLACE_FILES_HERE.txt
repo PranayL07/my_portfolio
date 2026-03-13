@@ -1,0 +1,5 @@
+Drop your files here:
+
+- resume.pdf   → linked from the "Download Résumé" button in index.html
+- photo.jpg    → replace the placeholder div in the About section with:
+                 <img src="assets/photo.jpg" alt="Your Name" />
