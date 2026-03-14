@@ -34,4 +34,4 @@ jobs:
           docker pull ${{ secrets.DOCKER_USERNAME }}/portfolio-site:v1
           docker stop portfolio || true
           docker rm portfolio || true
-          docker run -d -p 80:8000 --name portfolio ${{ secrets.DOCKER_USERNAME }}/portfolio-site:v1
+          docker run -d -p 80:80 --name portfolio ${{ secrets.DOCKER_USERNAME }}/portfolio-site:v1
