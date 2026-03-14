@@ -145,9 +145,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Template parameters (match your EmailJS template fields)
+      // Note: EmailJS (and many email services) will send from a verified sender address,
+      // but you can set the reply-to and include the sender name/address in the template.
       const templateParams = {
         from_name: name,
         from_email: email,
+        reply_to: email,           // Set Reply-To so replies go to the visitor
         subject: subject,
         message: message,
         to_email: CONTACT_EMAIL
