@@ -151,7 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
         from_name: name,
         from_email: email,
         reply_to: email,           // Set Reply-To so replies go to the visitor
-        subject: subject,
+        subject: subject,          // Use {{subject}} in your EmailJS template to show this
+        email_subject: subject,    // Optional alternative variable name
         message: message,
         to_email: CONTACT_EMAIL
       };
